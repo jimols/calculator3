@@ -12,6 +12,14 @@ namespace calculator3
 {
     public partial class Form1 : Form
     {
+
+        string input = string.Empty;
+        string op1 = string.Empty;
+        string op2 = string.Empty;
+        char operation;
+        double result = 0.0;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -84,22 +92,30 @@ namespace calculator3
 
         private void buttonAddition_Click(object sender, EventArgs e)
         {
-
+            op1 = input;
+            operation = '+';
+            input = string.Empty;
         }
 
-        private void ButtonSubstraction_Click(object sender, EventArgs e)
+        private void buttonSubstraction_Click(object sender, EventArgs e)
         {
-
+            op1 = input;
+            operation = '-';
+            input = string.Empty;
         }
 
         private void buttonDivision_Click(object sender, EventArgs e)
         {
-
+            op1 = input;
+            operation = '/';
+            input = string.Empty;
         }
 
         private void buttonMultiply_Click(object sender, EventArgs e)
         {
-
+            op1 = input;
+            operation = '*';
+            input = string.Empty;
         }
 
         private void Form1_Load(object sender, EventArgs e)

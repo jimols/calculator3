@@ -207,7 +207,7 @@ namespace calculator3
             this.ButtonSubstraction.Text = "-";
             this.ButtonSubstraction.UseMnemonic = false;
             this.ButtonSubstraction.UseVisualStyleBackColor = true;
-            this.ButtonSubstraction.Click += new System.EventHandler(this.ButtonSubstraction_Click);
+            this.ButtonSubstraction.Click += new System.EventHandler(this.buttonSubstraction_Click);
             // 
             // buttonDivision
             // 
