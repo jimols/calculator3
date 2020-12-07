@@ -46,6 +46,7 @@ namespace calculator3
             this.ButtonSubstraction = new System.Windows.Forms.Button();
             this.buttonDivision = new System.Windows.Forms.Button();
             this.buttonMultiply = new System.Windows.Forms.Button();
+            this.equals = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -231,11 +232,23 @@ namespace calculator3
             this.buttonMultiply.UseVisualStyleBackColor = true;
             this.buttonMultiply.Click += new System.EventHandler(this.buttonMultiply_Click);
             // 
+            // equals
+            // 
+            this.equals.Location = new System.Drawing.Point(12, 166);
+            this.equals.Name = "equals";
+            this.equals.Size = new System.Drawing.Size(238, 23);
+            this.equals.TabIndex = 17;
+            this.equals.Text = "=";
+            this.equals.UseMnemonic = false;
+            this.equals.UseVisualStyleBackColor = true;
+            this.equals.Click += new System.EventHandler(this.equals_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(342, 189);
+            this.ClientSize = new System.Drawing.Size(342, 215);
+            this.Controls.Add(this.equals);
             this.Controls.Add(this.buttonMultiply);
             this.Controls.Add(this.buttonDivision);
             this.Controls.Add(this.ButtonSubstraction);
@@ -280,6 +293,7 @@ namespace calculator3
         private System.Windows.Forms.Button ButtonSubstraction;
         private System.Windows.Forms.Button buttonDivision;
         private System.Windows.Forms.Button buttonMultiply;
+        private System.Windows.Forms.Button equals;
     }
 }
 

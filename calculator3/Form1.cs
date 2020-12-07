@@ -8,6 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
+/// <summary>
+/// följde instruktioner från denna
+/// https://www.instructables.com/Creating-a-Calculator-Visual-Studio-C/
+/// </summary>
+
 namespace calculator3
 {
     public partial class Form1 : Form
@@ -32,52 +39,72 @@ namespace calculator3
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.textBox1.Text = "";
+            input += "1";
+            this.textBox1.Text += input;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.textBox1.Text = "";
+            input += "2";
+            this.textBox1.Text += input;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.textBox1.Text = "";
+            input += "3";
+            this.textBox1.Text += input;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            this.textBox1.Text = "";
+            input += "4";
+            this.textBox1.Text += input;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            this.textBox1.Text = "";
+            input += "5";
+            this.textBox1.Text += input;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            this.textBox1.Text = "";
+            input += "6";
+            this.textBox1.Text += input;
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            this.textBox1.Text = "";
+            input += "7";
+            this.textBox1.Text += input;
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            this.textBox1.Text = "";
+            input += "8";
+            this.textBox1.Text += input;
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-
+            this.textBox1.Text = "";
+            input += "9";
+            this.textBox1.Text += input;
         }
 
         private void button0_Click(object sender, EventArgs e)
         {
-
+            this.textBox1.Text = "";
+            input += "0";
+            this.textBox1.Text += input;
         }
 
         private void buttonPeriod_Click(object sender, EventArgs e)
@@ -87,7 +114,10 @@ namespace calculator3
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
-
+            this.textBox1.Text = "";
+            this.input = string.Empty;
+            this.op1 = string.Empty;
+            this.op2 = string.Empty;
         }
 
         private void buttonAddition_Click(object sender, EventArgs e)
@@ -120,6 +150,45 @@ namespace calculator3
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void equals_Click(object sender, EventArgs e)
+        {
+
+            op2 = input;
+            double num1, num2;
+            double.TryParse(op1, out num1);
+            double.TryParse(op2, out num2);
+
+            if (operation == '+')
+            {
+                result = num1 + num2;
+                textBox1.Text = result.ToString();
+            }
+            else if (operation == '-')
+            {
+                result = num1 - num2;
+                textBox1.Text = result.ToString();
+            }
+            else if (operation == '*')
+            {
+                result = num1 * num2;
+                textBox1.Text = result.ToString();
+            }
+            else if (operation == '/')
+            {
+                if (num2 != 0)
+                {
+                    result = num1 / num2;
+                    textBox1.Text = result.ToString();
+                }
+                else
+                {
+                    textBox1.Text = "division by zero error";
+                }
+
+            }
 
         }
     }
