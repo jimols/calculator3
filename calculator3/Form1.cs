@@ -178,12 +178,13 @@ namespace calculator3
             }
             else if (operation == 'R')
             {
-                result = num1 * num2;
+                result = Math.Pow(num1, num2);
+
                 textBox1.Text = result.ToString();
             }
-            else if (operation == '*')
+            else if (operation == '√')
             {
-                result = num1 * num2;
+                result = Math.Sqrt(num1 * num2);
                 textBox1.Text = result.ToString();
             }
             else if (operation == '/')
