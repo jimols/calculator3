@@ -47,6 +47,8 @@ namespace calculator3
             this.buttonDivision = new System.Windows.Forms.Button();
             this.buttonMultiply = new System.Windows.Forms.Button();
             this.equals = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.squarRoot = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -192,7 +194,7 @@ namespace calculator3
             // 
             this.buttonAddition.Location = new System.Drawing.Point(256, 50);
             this.buttonAddition.Name = "buttonAddition";
-            this.buttonAddition.Size = new System.Drawing.Size(36, 52);
+            this.buttonAddition.Size = new System.Drawing.Size(36, 23);
             this.buttonAddition.TabIndex = 13;
             this.buttonAddition.Text = "+";
             this.buttonAddition.UseMnemonic = false;
@@ -203,7 +205,7 @@ namespace calculator3
             // 
             this.ButtonSubstraction.Location = new System.Drawing.Point(298, 50);
             this.ButtonSubstraction.Name = "ButtonSubstraction";
-            this.ButtonSubstraction.Size = new System.Drawing.Size(36, 52);
+            this.ButtonSubstraction.Size = new System.Drawing.Size(36, 23);
             this.ButtonSubstraction.TabIndex = 14;
             this.ButtonSubstraction.Text = "-";
             this.ButtonSubstraction.UseMnemonic = false;
@@ -212,9 +214,9 @@ namespace calculator3
             // 
             // buttonDivision
             // 
-            this.buttonDivision.Location = new System.Drawing.Point(256, 108);
+            this.buttonDivision.Location = new System.Drawing.Point(256, 79);
             this.buttonDivision.Name = "buttonDivision";
-            this.buttonDivision.Size = new System.Drawing.Size(36, 52);
+            this.buttonDivision.Size = new System.Drawing.Size(36, 23);
             this.buttonDivision.TabIndex = 15;
             this.buttonDivision.Text = "/";
             this.buttonDivision.UseMnemonic = false;
@@ -223,9 +225,9 @@ namespace calculator3
             // 
             // buttonMultiply
             // 
-            this.buttonMultiply.Location = new System.Drawing.Point(298, 108);
+            this.buttonMultiply.Location = new System.Drawing.Point(298, 79);
             this.buttonMultiply.Name = "buttonMultiply";
-            this.buttonMultiply.Size = new System.Drawing.Size(36, 52);
+            this.buttonMultiply.Size = new System.Drawing.Size(36, 23);
             this.buttonMultiply.TabIndex = 16;
             this.buttonMultiply.Text = "*";
             this.buttonMultiply.UseMnemonic = false;
@@ -243,11 +245,35 @@ namespace calculator3
             this.equals.UseVisualStyleBackColor = true;
             this.equals.Click += new System.EventHandler(this.equals_Click);
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(256, 108);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(36, 23);
+            this.button10.TabIndex = 18;
+            this.button10.Text = "x^";
+            this.button10.UseMnemonic = false;
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button_RaisedTo);
+            // 
+            // squarRoot
+            // 
+            this.squarRoot.Location = new System.Drawing.Point(298, 108);
+            this.squarRoot.Name = "squarRoot";
+            this.squarRoot.Size = new System.Drawing.Size(36, 23);
+            this.squarRoot.TabIndex = 19;
+            this.squarRoot.Text = "√";
+            this.squarRoot.UseMnemonic = false;
+            this.squarRoot.UseVisualStyleBackColor = true;
+            this.squarRoot.Click += new System.EventHandler(this.squarRoot_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 215);
+            this.Controls.Add(this.squarRoot);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.equals);
             this.Controls.Add(this.buttonMultiply);
             this.Controls.Add(this.buttonDivision);
@@ -294,6 +320,8 @@ namespace calculator3
         private System.Windows.Forms.Button buttonDivision;
         private System.Windows.Forms.Button buttonMultiply;
         private System.Windows.Forms.Button equals;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button squarRoot;
     }
 }
 

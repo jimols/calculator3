@@ -176,6 +176,16 @@ namespace calculator3
                 result = num1 * num2;
                 textBox1.Text = result.ToString();
             }
+            else if (operation == 'R')
+            {
+                result = num1 * num2;
+                textBox1.Text = result.ToString();
+            }
+            else if (operation == '*')
+            {
+                result = num1 * num2;
+                textBox1.Text = result.ToString();
+            }
             else if (operation == '/')
             {
                 if (num2 != 0)
@@ -190,6 +200,20 @@ namespace calculator3
 
             }
 
+        }
+
+        private void button_RaisedTo(object sender, EventArgs e)
+        {
+            op1 = input;
+            operation = 'R'; 
+            input = string.Empty;
+        }
+
+        private void squarRoot_Click(object sender, EventArgs e)
+        {
+            op1 = input;
+            operation = '√';
+            input = string.Empty;
         }
     }
 }
