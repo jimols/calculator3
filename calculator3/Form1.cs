@@ -109,7 +109,9 @@ namespace calculator3
 
         private void buttonPeriod_Click(object sender, EventArgs e)
         {
-
+            this.textBox1.Text = "";
+            input += ",";
+            this.textBox1.Text += input;
         }
 
         private void buttonClear_Click(object sender, EventArgs e)
@@ -148,11 +150,6 @@ namespace calculator3
             input = string.Empty;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void equals_Click(object sender, EventArgs e)
         {
 
@@ -184,7 +181,7 @@ namespace calculator3
             }
             else if (operation == '√')
             {
-                result = Math.Sqrt(num1 * num2);
+                result = Math.Sqrt(num1);
                 textBox1.Text = result.ToString();
             }
             else if (operation == '/')
@@ -199,6 +196,8 @@ namespace calculator3
                     textBox1.Text = "division by zero error";
                 }
             }
+
+            //minne för att fortsätta beräkning från senaste resultat
             input = result.ToString();
         }
 
@@ -214,6 +213,7 @@ namespace calculator3
             op1 = input;
             operation = '√';
             input = string.Empty;
+            equals_Click(sender, e);
         }
     }
 }
