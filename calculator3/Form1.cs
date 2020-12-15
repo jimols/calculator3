@@ -17,7 +17,7 @@ using System.Windows.Forms;
 
 namespace calculator3
 {
-    public partial class Form1 : Form
+    public partial class Calculator : Form
     {
 
         string input = string.Empty;
@@ -27,7 +27,7 @@ namespace calculator3
         double result = 0.0;
 
 
-        public Form1()
+        public Calculator()
         {
             InitializeComponent();
         }
@@ -198,9 +198,8 @@ namespace calculator3
                 {
                     textBox1.Text = "division by zero error";
                 }
-
             }
-
+            input = result.ToString();
         }
 
         private void button_RaisedTo(object sender, EventArgs e)
