@@ -275,6 +275,9 @@
   <data name="&gt;&gt;button9.Name" xml:space="preserve">
     <value>button9</value>
   </data>
+  <data name="&gt;&gt;buttonPeriod.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="&gt;&gt;equals.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -295,9 +298,6 @@
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Calculator</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
     <value>94, 79</value>
@@ -506,8 +506,8 @@
   <data name="buttonDivision.Location" type="System.Drawing.Point, System.Drawing">
     <value>256, 79</value>
   </data>
-  <data name="&gt;&gt;buttonPeriod.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="button10.Text" xml:space="preserve">
     <value>x^</value>

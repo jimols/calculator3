@@ -158,4 +158,7 @@
   <data name="squarRoot.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Calculator</value>
+  </data>
 </root>

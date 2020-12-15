@@ -26,92 +26,76 @@ namespace calculator3
         char operation;
         double result = 0.0;
 
-
         public Calculator()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
             input += "1";
-            this.textBox1.Text += input;
+            this.textBox1.Text = input;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
             input += "2";
-            this.textBox1.Text += input;
+            this.textBox1.Text = input;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
             input += "3";
-            this.textBox1.Text += input;
+            this.textBox1.Text = input;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
             input += "4";
-            this.textBox1.Text += input;
+            this.textBox1.Text = input;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
             input += "5";
-            this.textBox1.Text += input;
+            this.textBox1.Text = input;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
             input += "6";
-            this.textBox1.Text += input;
+            this.textBox1.Text = input;
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
             input += "7";
-            this.textBox1.Text += input;
+            this.textBox1.Text = input;
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
             input += "8";
-            this.textBox1.Text += input;
+            this.textBox1.Text = input;
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
             input += "9";
-            this.textBox1.Text += input;
+            this.textBox1.Text = input;
         }
 
         private void button0_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
             input += "0";
-            this.textBox1.Text += input;
+            this.textBox1.Text = input;
         }
 
         private void buttonPeriod_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
             input += ",";
-            this.textBox1.Text += input;
+            this.textBox1.Text = input;
         }
 
         private void buttonClear_Click(object sender, EventArgs e)
@@ -152,7 +136,6 @@ namespace calculator3
 
         private void equals_Click(object sender, EventArgs e)
         {
-
             op2 = input;
             double num1, num2;
             double.TryParse(op1, out num1);

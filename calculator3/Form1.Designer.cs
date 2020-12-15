@@ -56,7 +56,6 @@ namespace calculator3
             // 
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
@@ -233,7 +232,11 @@ namespace calculator3
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "Calculator";
+            this.ShowIcon = false;
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
