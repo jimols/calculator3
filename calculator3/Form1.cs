@@ -11,15 +11,21 @@ using System.Windows.Forms;
 
 
 /// <summary>
-/// följde instruktioner från denna
+/// En grafik miniräknare 
+/// Grunden designad genom att följa denna guide:
 /// https://www.instructables.com/Creating-a-Calculator-Visual-Studio-C/
+/// 
+/// Miniräknaren håller minne via en sträng
 /// </summary>
 
 namespace calculator3
 {
+    //minnet sparas genom string input och ritas upp på skärmen
+    //beräkningar sker genom att skriva över minne till op1 och op2 och utföra beräkning med den operation som angetts
+
     public partial class Calculator : Form
     {
-
+       
         string input = string.Empty;
         string op1 = string.Empty;
         string op2 = string.Empty;
@@ -106,6 +112,8 @@ namespace calculator3
             this.op2 = string.Empty;
         }
 
+        //Vid operand sparas minnet till op1 för att kunna återanvända input
+
         private void buttonAddition_Click(object sender, EventArgs e)
         {
             op1 = input;
@@ -134,8 +142,27 @@ namespace calculator3
             input = string.Empty;
         }
 
+        private void button_RaisedTo(object sender, EventArgs e)
+        {
+            op1 = input;
+            operation = 'R';
+            input = string.Empty;
+        }
+
+        private void squarRoot_Click(object sender, EventArgs e)
+        {
+            op1 = input;
+            operation = '√';
+            input = string.Empty;
+            equals_Click(sender, e);
+        }
+
         private void equals_Click(object sender, EventArgs e)
         {
+
+            //felhantering för Parse är redundant eftersom inkompatibel input inte är möjlig
+            //Enklare else satser för att kolla vilken operator som ska användas
+
             op2 = input;
             double num1, num2;
             double.TryParse(op1, out num1);
@@ -176,27 +203,12 @@ namespace calculator3
                 }
                 else
                 {
-                    textBox1.Text = "division by zero error";
+                    textBox1.Text = "div zero error, it's still impossible";
                 }
             }
 
-            //minne för att fortsätta beräkning från senaste resultat
+            //minnet som hålls i result går över till input igen för att fortsätta beräkning från senaste resultat
             input = result.ToString();
-        }
-
-        private void button_RaisedTo(object sender, EventArgs e)
-        {
-            op1 = input;
-            operation = 'R'; 
-            input = string.Empty;
-        }
-
-        private void squarRoot_Click(object sender, EventArgs e)
-        {
-            op1 = input;
-            operation = '√';
-            input = string.Empty;
-            equals_Click(sender, e);
         }
     }
 }
