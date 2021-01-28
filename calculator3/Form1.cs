@@ -32,12 +32,12 @@ namespace calculator3
         char operation;
         double result = 0.0;
         List<string> memory = new List<string>();
+       public int memoryIndex = 0;
 
         public Calculator()
         {
             InitializeComponent();
         }
-
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -210,9 +210,31 @@ namespace calculator3
 
             //minnet som hålls i result går över till input igen för att fortsätta beräkning från senaste resultat
             input = result.ToString();
+            memory.Add(input.ToString());
+            memoryIndex ++;
+        }
 
-            memory.Add(input);
-            Console.WriteLine(memory);
+        private void button11_Click(object sender, EventArgs e)
+        {
+            if(memoryIndex != 0)
+            {
+                memoryIndex--;
+
+            }
+            input = memory[memoryIndex];
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            if (memoryIndex < 0)
+            {
+                if (memoryIndex < (memory.Count - 1))
+                {
+                    memoryIndex++;
+
+                }
+                input = memory[memoryIndex];
+            }
         }
     }
 }

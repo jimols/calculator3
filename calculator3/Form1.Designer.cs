@@ -215,12 +215,14 @@ namespace calculator3
             resources.ApplyResources(this.button11, "button11");
             this.button11.Name = "button11";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
             resources.ApplyResources(this.button12, "button12");
             this.button12.Name = "button12";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // Calculator
             // 
