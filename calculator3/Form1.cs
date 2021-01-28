@@ -31,6 +31,7 @@ namespace calculator3
         string op2 = string.Empty;
         char operation;
         double result = 0.0;
+        List<string> memory = new List<string>();
 
         public Calculator()
         {
@@ -209,6 +210,9 @@ namespace calculator3
 
             //minnet som hålls i result går över till input igen för att fortsätta beräkning från senaste resultat
             input = result.ToString();
+
+            memory.Add(input);
+            Console.WriteLine(memory);
         }
     }
 }
