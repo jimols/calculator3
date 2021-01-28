@@ -50,6 +50,8 @@ namespace calculator3
             this.equals = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.squarRoot = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -208,10 +210,24 @@ namespace calculator3
             this.squarRoot.UseVisualStyleBackColor = true;
             this.squarRoot.Click += new System.EventHandler(this.squarRoot_Click);
             // 
+            // button11
+            // 
+            resources.ApplyResources(this.button11, "button11");
+            this.button11.Name = "button11";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            resources.ApplyResources(this.button12, "button12");
+            this.button12.Name = "button12";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
             // Calculator
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.squarRoot);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.equals);
@@ -264,6 +280,8 @@ namespace calculator3
         private System.Windows.Forms.Button equals;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button squarRoot;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
     }
 }
 
