@@ -596,56 +596,56 @@
   <data name="&gt;&gt;squarRoot.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button11.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="button_backwards.Location" type="System.Drawing.Point, System.Drawing">
     <value>257, 50</value>
   </data>
-  <data name="button11.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="button_backwards.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 23</value>
   </data>
-  <data name="button11.TabIndex" type="System.Int32, mscorlib">
+  <data name="button_backwards.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="button11.Text" xml:space="preserve">
+  <data name="button_backwards.Text" xml:space="preserve">
     <value>&lt;</value>
   </data>
-  <data name="&gt;&gt;button11.Name" xml:space="preserve">
-    <value>button11</value>
+  <data name="&gt;&gt;button_backwards.Name" xml:space="preserve">
+    <value>button_backwards</value>
   </data>
-  <data name="&gt;&gt;button11.Type" xml:space="preserve">
+  <data name="&gt;&gt;button_backwards.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button11.Parent" xml:space="preserve">
+  <data name="&gt;&gt;button_backwards.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button11.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;button_backwards.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="button_forward.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button12.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="button_forward.Location" type="System.Drawing.Point, System.Drawing">
     <value>299, 50</value>
   </data>
-  <data name="button12.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="button_forward.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 23</value>
   </data>
-  <data name="button12.TabIndex" type="System.Int32, mscorlib">
+  <data name="button_forward.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="button12.Text" xml:space="preserve">
+  <data name="button_forward.Text" xml:space="preserve">
     <value>&gt;</value>
   </data>
-  <data name="&gt;&gt;button12.Name" xml:space="preserve">
-    <value>button12</value>
+  <data name="&gt;&gt;button_forward.Name" xml:space="preserve">
+    <value>button_forward</value>
   </data>
-  <data name="&gt;&gt;button12.Type" xml:space="preserve">
+  <data name="&gt;&gt;button_forward.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button12.Parent" xml:space="preserve">
+  <data name="&gt;&gt;button_forward.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button12.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;button_forward.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

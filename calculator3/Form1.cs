@@ -25,14 +25,15 @@ namespace calculator3
 
     public partial class Calculator : Form
     {
-       
+
         string input = string.Empty;
         string op1 = string.Empty;
         string op2 = string.Empty;
         char operation;
         double result = 0.0;
-        List<string> memory = new List<string>();
-       public int memoryIndex = 0;
+        //minne:
+        public List<string> memory = new List<string>();
+        public int memoryIndex = 0;
 
         public Calculator()
         {
@@ -160,7 +161,6 @@ namespace calculator3
 
         private void equals_Click(object sender, EventArgs e)
         {
-
             //felhantering för Parse är redundant eftersom inkompatibel input inte är möjlig
             //Enklare else satser för att kolla vilken operator som ska användas
 
@@ -210,30 +210,28 @@ namespace calculator3
 
             //minnet som hålls i result går över till input igen för att fortsätta beräkning från senaste resultat
             input = result.ToString();
-            memory.Add(input.ToString());
-            memoryIndex ++;
+            memory.Add(input);
+            memoryIndex++;
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void button11_Click(object sender, EventArgs e) //bakåt i minne
         {
-            if(memoryIndex != 0)
+            if (memoryIndex > 0)
             {
                 memoryIndex--;
-
             }
-            input = memory[memoryIndex];
+            this.textBox1.Text = memory[memoryIndex];
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void button12_Click(object sender, EventArgs e) //framåt i minne
         {
-            if (memoryIndex < 0)
+            if (memoryIndex < memory.Count)
             {
                 if (memoryIndex < (memory.Count - 1))
                 {
                     memoryIndex++;
-
                 }
-                input = memory[memoryIndex];
+                this.textBox1.Text = memory[memoryIndex];
             }
         }
     }

@@ -50,8 +50,8 @@ namespace calculator3
             this.equals = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.squarRoot = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.button_backwards = new System.Windows.Forms.Button();
+            this.button_forward = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -210,26 +210,26 @@ namespace calculator3
             this.squarRoot.UseVisualStyleBackColor = true;
             this.squarRoot.Click += new System.EventHandler(this.squarRoot_Click);
             // 
-            // button11
+            // button_backwards
             // 
-            resources.ApplyResources(this.button11, "button11");
-            this.button11.Name = "button11";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            resources.ApplyResources(this.button_backwards, "button_backwards");
+            this.button_backwards.Name = "button_backwards";
+            this.button_backwards.UseVisualStyleBackColor = true;
+            this.button_backwards.Click += new System.EventHandler(this.button11_Click);
             // 
-            // button12
+            // button_forward
             // 
-            resources.ApplyResources(this.button12, "button12");
-            this.button12.Name = "button12";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            resources.ApplyResources(this.button_forward, "button_forward");
+            this.button_forward.Name = "button_forward";
+            this.button_forward.UseVisualStyleBackColor = true;
+            this.button_forward.Click += new System.EventHandler(this.button12_Click);
             // 
             // Calculator
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button_forward);
+            this.Controls.Add(this.button_backwards);
             this.Controls.Add(this.squarRoot);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.equals);
@@ -282,8 +282,8 @@ namespace calculator3
         private System.Windows.Forms.Button equals;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button squarRoot;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button_backwards;
+        private System.Windows.Forms.Button button_forward;
     }
 }
 
